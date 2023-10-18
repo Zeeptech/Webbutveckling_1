@@ -36,23 +36,21 @@ body {
 }
 
 .bio {
-    display: grid;
-    justify-content: center;
-    height: 100vh;
     padding: 15px;
+    background: rgb(24, 24, 24)
+    
 
 }
 .bio .text-wrapper {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 10px;
-    border: black solid 1px;
-   
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    
  }
  .bio .text {
     padding: 15px;
-   
+    margin: 0 50px;
+    color: whitesmoke;
  }
  .bio .text-wrapper .text ol {
     display: inline-block;
@@ -62,7 +60,9 @@ body {
 
  .bio .text-wrapper .text h2 {
     padding: 15px;
+    text-align: center;
     border-bottom: solid black 2px;
+    margin-top: 0%;
     margin-right: 170px;
     margin-left: 170px;
  }
@@ -71,4 +71,13 @@ body {
  }
  .bio .text-wrapper .text p {
     font-size: large;
+ }
+ .bio .text-wrapper .text table {
+    width: 100%;
+    border-collapse: collapse;
+ }
+ .bio .text-wrapper .text tr,th,td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 10px;
  }
