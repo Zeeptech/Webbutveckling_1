@@ -3,6 +3,7 @@ html {
   }
 body {
     margin:0;
+
 }
 
 .hero {
@@ -23,22 +24,24 @@ body {
 }
 
 .hero .text .button {
-    background: whitesmoke;
-    color:black;
+    border:1px solid rgb(10, 236, 67);
+    color:rgb(10, 236, 67);
     padding: 3px 15px;
-    border-radius: 20px;
+    border-radius: 3px;
     text-decoration: none;
 }
 
 .hero .text .button:hover {
     cursor:pointer;
-    filter:brightness(0.7);
+    filter:brightness(0.6);
 }
-
-.bio {
+.highlight {
+   color:rgb(10, 236, 67);
+}
+.bio { 
     padding: 15px;
-    background: rgb(24, 24, 24)
-    
+    background: rgb(24, 24, 24);
+
 
 }
 .bio .text-wrapper {
@@ -78,6 +81,5 @@ body {
  }
  .bio .text-wrapper .text tr,th,td {
     border: 1px solid grey;
-    border-collapse: collapse;
     padding: 10px;
  }
