@@ -7,3 +7,38 @@ html {
     scroll-behavior: smooth;
 
   }
+  body {
+   color:whitesmoke;
+   background: rgb(24, 24, 24);
+  }
+  h2{
+   text-align: center;
+  }
+  .hero {
+
+  }
+  .hero .text{
+
+  }
+  .his {
+
+  }
+  .text-wrapper{
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   padding: 10px 15px;
+  }
+  .his .text {
+
+  }
+ 
+  .com {
+   background: whitesmoke;
+   color: black;
+   border-radius: 4px;
+   margin: 0;
+   padding: 5px 5px;
+  }
+  .com .text {
+
+  }
