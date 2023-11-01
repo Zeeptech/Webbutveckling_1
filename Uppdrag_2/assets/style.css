@@ -10,9 +10,14 @@ html {
   body {
    color:whitesmoke;
    background: rgb(24, 24, 24);
+   margin:0;
+  }
+  p{
+   font-size: large;
   }
   h2{
    text-align: center;
+   border-bottom: solid black 2px;
   }
   .hero {
 
@@ -26,18 +31,17 @@ html {
   .text-wrapper{
    display: grid;
    grid-template-columns: 2fr 1fr;
-   padding: 10px 15px;
+   padding: 20px;
   }
   .his .text {
-
+   margin: 0 50px;
   }
  
   .com {
    background: whitesmoke;
    color: black;
    border-radius: 4px;
-   margin: 0;
-   padding: 5px 5px;
+   padding: 5px 10px;
   }
   .com .text {
 
