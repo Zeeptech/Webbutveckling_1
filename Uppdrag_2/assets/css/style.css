@@ -5,21 +5,21 @@
 }
 html {
     scroll-behavior: smooth;
-
   }
-  body {
+body {
    color:whitesmoke;
    background: rgb(24, 24, 24);
    margin:0;
-  }
-  p{
+}
+p {
    font-size: large;
-  }
-  h2{
+}
+h2 {
    text-align: center;
-   border-bottom: solid black 2px;
-  }
-  .hero {
+   padding-bottom: 15px;
+   margin: 0;
+}
+.hero {
    display: grid;
    place-items: center;
    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/laptop.png");
@@ -28,28 +28,45 @@ html {
    background-size: cover;
    width: 100%;
    height: 60vh;
-  }
-  .hero .text{
+}
+.hero .text {
    font-size: x-large;
-  }
-  .his {
+}
+.info {
    height: 95vh;
-  }
-  .text-wrapper{
+}
+
+.info .text-wrapper {
    display: grid;
+   gap: 250px;
    grid-template-columns: 2fr 1fr;
-   padding: 20px;
+   padding: 50px;
+   align-items: start;
+
   }
-  .his .text {
-   margin: 0 50px;
-  }
- 
-  .com {
+.info .text-wrapper .col.his .text h2 {
+   border-bottom: solid whitesmoke 2px;
+   margin-right: 200px;
+   margin-left: 200px;
+}
+
+.info .text-wrapper .col .text{
+   margin-bottom: 60px;
+   
+}
+.info .text-wrapper .col.com {
+   display: flex;
+   flex-direction: column;
+}
+.col.com .text{
    background: whitesmoke;
    color: black;
    border-radius: 4px;
-   padding: 5px 10px;
-  }
-  .com .text {
+   padding: 50px;
 
-  }
+
+}
+.info .text-wrapper .col.com .text h2 {
+   border-bottom: solid black 2px;
+
+}
