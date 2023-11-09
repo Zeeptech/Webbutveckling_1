@@ -20,8 +20,6 @@ h2 {
    margin: 0;
 }
 .hero {
-   display: grid;
-   place-items: center;
    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/laptop.png");
    background-position: center;
    background-repeat: no-repeat;
@@ -29,11 +27,23 @@ h2 {
    width: 100%;
    height: 60vh;
 }
-.hero .text {
+.hero .wrapper {
    font-size: x-large;
+   display: grid;
+   grid-template-rows:1fr auto ;
+   height: 100%;
+}
+.hero .wrapper .row.main{
+   display: grid;
+   place-items: center;
+   
+}
+.hero .wrapper .row.footer{
+   display: flex;
+   justify-content: end;
 }
 .info {
-   height: 95vh;
+   height: 60vh;
 }
 
 .info .text-wrapper {
@@ -44,15 +54,14 @@ h2 {
    align-items: start;
 
   }
+  .info .text-wrapper .col .text{
+   margin-bottom: 60px;
+   
+}
 .info .text-wrapper .col.his .text h2 {
    border-bottom: solid whitesmoke 2px;
    margin-right: 200px;
    margin-left: 200px;
-}
-
-.info .text-wrapper .col .text{
-   margin-bottom: 60px;
-   
 }
 .info .text-wrapper .col.com {
    display: flex;
@@ -63,10 +72,7 @@ h2 {
    color: black;
    border-radius: 4px;
    padding: 50px;
-
-
 }
 .info .text-wrapper .col.com .text h2 {
    border-bottom: solid black 2px;
-
 }
