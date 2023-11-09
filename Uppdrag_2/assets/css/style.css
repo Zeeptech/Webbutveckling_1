@@ -3,45 +3,55 @@
 * {
    font-family: 'Nunito', sans-serif;
 }
+
 html {
     scroll-behavior: smooth;
   }
+
 body {
    color:whitesmoke;
    background: rgb(24, 24, 24);
    margin:0;
 }
+
 p {
    font-size: large;
 }
+
 h2 {
    text-align: center;
    padding-bottom: 15px;
    margin: 0;
 }
+
 .hero {
-   background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/laptop.png");
+   background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/laptop.png");
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
    width: 100%;
    height: 60vh;
 }
+
 .hero .wrapper {
    font-size: x-large;
    display: grid;
    grid-template-rows:1fr auto ;
    height: 100%;
 }
+
 .hero .wrapper .row.main{
    display: grid;
    place-items: center;
    
 }
+
 .hero .wrapper .row.footer{
    display: flex;
    justify-content: end;
+   margin-right: 50px;
 }
+
 .info {
    height: 60vh;
 }
@@ -52,27 +62,27 @@ h2 {
    grid-template-columns: 2fr 1fr;
    padding: 50px;
    align-items: start;
-
-  }
-  .info .text-wrapper .col .text{
+}
+.info .text-wrapper .col article{
    margin-bottom: 60px;
    
 }
-.info .text-wrapper .col.his .text h2 {
+
+.info .text-wrapper .col.his article h2 {
    border-bottom: solid whitesmoke 2px;
    margin-right: 200px;
    margin-left: 200px;
 }
+
 .info .text-wrapper .col.com {
    display: flex;
    flex-direction: column;
-}
-.col.com .text{
    background: whitesmoke;
    color: black;
    border-radius: 4px;
    padding: 50px;
 }
-.info .text-wrapper .col.com .text h2 {
+
+.info .text-wrapper .col.com article h2 {
    border-bottom: solid black 2px;
 }
