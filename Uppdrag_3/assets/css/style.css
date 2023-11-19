@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+   font-family: 'Nunito', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    color:whitesmoke;
+    background: rgb(24, 24, 24);
+    margin:0;
+    
+ }
+ 
+header {
+    display: flex;
+    justify-content: center;
+
+ }
+article {
+    display: grid;
+    grid-template-rows: auto auto reverse;
+    background-color: red;
+}
+section {
+    display: grid;
+    padding: 15px;
+}
+
+
+ a {
+    text-decoration: none;
+    color: #4285f4;
+ }
+
+ a:hover {
+    cursor:pointer;
+    
+}
+aside {
+    display: grid;
+    justify-items: center;
+    place-items: center;
+    padding: 50px;
+    gap: 105px;
+    
+}
+
+
+aside h1 {
+    display: none;
+}
+footer {
+    
+}
+#wrapper {
+    display: grid;
+    width: 100%;
+    height: 250px;
+    grid-template-areas: 
+        "head head head"
+        "art art aside"
+        "art art aside"
+        "foot foot foot"
+    ;
+}
+#wrapper > header {
+    grid-area: head;
+    background-color: grey;
+}
+#wrapper > article {
+    grid-area: art;
+}
+#wrapper > section {
+    grid-area: sec;
+    background-color: beige;
+}
+#wrapper > aside {
+    grid-area: aside;
+    background-color: green;
+}
+#wrapper > footer {
+    grid-area: foot;
+    background-color: aqua;
+}
