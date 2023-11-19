@@ -4,6 +4,7 @@
    font-family: 'Nunito', sans-serif;
 }
 
+
 html {
     scroll-behavior: smooth;
   }
@@ -18,24 +19,27 @@ body {
 header {
     display: flex;
     justify-content: center;
+    white-space: nowrap;
 
  }
+ section header {
+    border-bottom: 2px solid whitesmoke;
+    margin: 0 350px 0 350px;
+ }
+ 
 article {
     display: grid;
     grid-template-rows: auto auto reverse;
-    background-color: red;
 }
 section {
     display: grid;
     padding: 15px;
+    margin: 0 250px 0 250px;
 }
-
-
  a {
     text-decoration: none;
     color: #4285f4;
  }
-
  a:hover {
     cursor:pointer;
     
@@ -46,22 +50,19 @@ aside {
     place-items: center;
     padding: 50px;
     gap: 105px;
+    border-left: 2px solid whitesmoke;
     
 }
-
-
 aside h1 {
     display: none;
 }
-footer {
-    
-}
+
 #wrapper {
     display: grid;
     width: 100%;
-    height: 250px;
+    height: 100vh;
     grid-template-areas: 
-        "head head head"
+        "head head ."
         "art art aside"
         "art art aside"
         "foot foot foot"
@@ -69,20 +70,26 @@ footer {
 }
 #wrapper > header {
     grid-area: head;
-    background-color: grey;
+   
 }
 #wrapper > article {
     grid-area: art;
 }
 #wrapper > section {
     grid-area: sec;
-    background-color: beige;
+    
 }
 #wrapper > aside {
     grid-area: aside;
-    background-color: green;
+    
 }
 #wrapper > footer {
     grid-area: foot;
-    background-color: aqua;
+    align-self: flex-end;
+    margin: 0 0 5px 15px
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
 }
