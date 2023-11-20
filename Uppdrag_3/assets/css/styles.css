@@ -102,7 +102,15 @@ aside h1 {
             "foot"
         ;
     }
-    
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: xx-large;
+    }
+    p {
+        font-size: x-large;
+    }
     #wrapper > footer {
         place-self: center;
     }
