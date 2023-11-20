@@ -4,7 +4,6 @@
    font-family: 'Nunito', sans-serif;
 }
 
-
 html {
     scroll-behavior: smooth;
   }
@@ -25,10 +24,7 @@ header {
     border-bottom: 2px solid whitesmoke;
     margin: 0 350px 0 350px;
  }
- 
- h2::first-line{
-    color: rgb(3, 196, 3);
- }
+
 article {
     display: grid;
     
@@ -50,7 +46,6 @@ section {
     cursor:pointer; 
     color: #033485;
     transition-duration: 500ms;
-
 }
 
 aside {
@@ -95,7 +90,7 @@ aside h1 {
     margin: 0 0 5px 15px
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1589px) {
     
     #wrapper {
         grid-template-columns: 1fr;
@@ -107,24 +102,28 @@ aside h1 {
             "foot"
         ;
     }
+    
     #wrapper > footer {
         place-self: center;
     }
+
     header {
         white-space: normal;
         text-align: center;
     }
+
     section{
-        width: 100% ;
         margin:0;
-       
     }
+
     section header {
         margin: 0;
     }
+
     article{
         width: 100%;
-       
+        margin: 0;
+        padding: 0;
     }
 
     aside {
