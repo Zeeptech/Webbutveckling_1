@@ -13,50 +13,54 @@ body {
     color:whitesmoke;
     background: rgb(24, 24, 24);
     margin:0;
-    
  }
  
 header {
     display: flex;
     justify-content: center;
     white-space: nowrap;
-
  }
+
  section header {
     border-bottom: 2px solid whitesmoke;
     margin: 0 350px 0 350px;
  }
  
+ h2::first-line{
+    color: rgb(3, 196, 3);
+ }
 article {
-    display: grid;
-    grid-template-rows: auto auto reverse;
+    
+    
 }
+
 section {
     display: grid;
     padding: 15px;
     margin: 0 250px 0 250px;
 }
+
  a {
     text-decoration: none;
     color: #4285f4;
  }
+
  a:hover {
-    cursor:pointer;
-    
+    cursor:pointer; 
 }
+
 aside {
     display: grid;
     justify-items: center;
     place-items: center;
     padding: 50px;
     gap: 105px;
-    border-left: 2px solid whitesmoke;
-    
+    border-left: 2px solid whitesmoke; 
 }
+
 aside h1 {
     display: none;
 }
-
 #wrapper {
     display: grid;
     width: 100%;
@@ -68,28 +72,43 @@ aside h1 {
         "foot foot foot"
     ;
 }
+
 #wrapper > header {
     grid-area: head;
-   
 }
+
 #wrapper > article {
     grid-area: art;
 }
+
 #wrapper > section {
     grid-area: sec;
     
 }
+
 #wrapper > aside {
     grid-area: aside;
-    
 }
+
 #wrapper > footer {
     grid-area: foot;
     align-self: flex-end;
     margin: 0 0 5px 15px
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-
+@media only screen and (max-width: 600px) {
+    
+    #wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows:  0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: 
+            "head"
+            "art"
+            "aside"
+            "foot"
+        ;
+    }
+    #wrapper > footer {
+        place-self: center;
+    }
 }
