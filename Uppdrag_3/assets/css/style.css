@@ -115,6 +115,7 @@ aside h1 {
     }
     #wrapper > footer {
         place-self: center;
+        margin: 0;
     }
 
     header {
