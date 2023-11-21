@@ -13,7 +13,7 @@ body {
     background: rgb(24, 24, 24);
     margin:0;
  }
- 
+
 header {
     display: flex;
     justify-content: center;
@@ -89,6 +89,17 @@ aside h1 {
     align-self: flex-end;
     margin: 0 0 5px 15px
 }
+@media only screen and (min-width:1925px){
+    h1 {
+        font-size: 35px;
+     }
+     h2{
+        font-size: 30px;
+     }
+     p{
+        font-size: 20px;
+     }
+}
 /* Tablet Mode*/
 @media only screen and (max-width: 1589px) {
     
@@ -132,7 +143,7 @@ aside h1 {
     }
 }
 /* Phone Mode*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     h1{
         font-size: 3.5em;
     }
