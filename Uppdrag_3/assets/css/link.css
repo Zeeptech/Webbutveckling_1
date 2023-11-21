@@ -1,0 +1,11 @@
+.linktext a {
+    text-decoration: none;
+    color: #4285f4;
+    transition-duration: 500ms;
+ }
+
+ .linktext a:hover {
+    cursor:pointer; 
+    color: #033485;
+    transition-duration: 500ms;
+}

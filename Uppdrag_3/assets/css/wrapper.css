@@ -1,0 +1,29 @@
+#wrapper {
+    display: grid;
+    width: 100%;
+    height: 100vh;  
+    grid-template-areas: 
+        "head head ."
+        "art art aside"
+        "art art aside"
+        "foot foot foot"
+    ;
+}
+
+#wrapper > header {
+    grid-area: head;
+}
+
+#wrapper > article {
+    grid-area: art;
+}
+
+#wrapper > aside {
+    grid-area: aside;
+}
+
+#wrapper > footer {
+    grid-area: foot;
+    align-self: flex-end;
+    margin: 0 0 5px 15px
+}

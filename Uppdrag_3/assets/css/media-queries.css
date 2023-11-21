@@ -1,0 +1,68 @@
+/* Större skärmar */
+@media only screen and (min-width: 1925px) {
+    #wrapper h1 {
+      font-size: 35px;
+    }
+    #wrapper h2 {
+      font-size: 30px;
+    }
+    #wrapper p {
+      font-size: 20px;
+    }
+}
+/* Surfplatta / Halv skärm */
+@media only screen and (max-width: 1589px) {
+    
+    #wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows:  0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: 
+            "head"
+            "art"
+            "aside"
+            "foot"
+        ;
+    }
+    #wrapper > footer {
+        place-self: center;
+        margin: 0;
+    }
+
+    header {
+        white-space: normal;
+        text-align: center;
+    }
+
+    section{
+        margin:0;
+    }
+
+    section header {
+        margin: 0;
+    }
+
+    article{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    aside {
+        border-left: 0;
+        padding: 0;
+        gap: 15px;
+    }
+}
+/* Mobiltelefon */
+/* Upptäcker vad för typ av pekare som används. I detta fall på mobiler så används coarse, då kan vi lägga till våran css för just mobilanvändare.*/
+@media(pointer: coarse) {
+    h1{
+        font-size: 3.5em;
+    }
+    h2{
+        font-size: 3em;
+    }
+    p {
+        font-size: 2.5em;
+    }
+}

@@ -1,0 +1,12 @@
+aside {
+    display: grid;
+    justify-items: center;
+    place-items: center;
+    padding: 50px;
+    gap: 105px;
+    border-left: 2px solid whitesmoke; 
+}
+
+aside h1 {
+    display: none;
+}
